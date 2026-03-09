@@ -10,10 +10,10 @@ model = tf.keras.models.load_model('model.h5')
 
 # load the trained model
 
-with open('label _encoder_geo.pkl', 'rb') as file:
+with open('label_encoder_geo.pkl', 'rb') as file:
     onehot_enoder_geo = pickle.load(file)
 
-with open('label _encoder_gender.pkl', 'rb') as file:
+with open('label_encoder_gender.pkl', 'rb') as file:
     label_enoder_gender = pickle.load(file)
 
 with open('scaler.pkl', 'rb') as file:
